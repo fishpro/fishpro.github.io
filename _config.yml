@@ -4,9 +4,9 @@
 baseurl:
 url: https://www.fishpro.com.cn
 date_format: "ordinal"
-title: 码志
-subtitle: "fishpro"
-description: "fishpro"
+title: fishpro
+subtitle: "编程、聊天看世界"
+description: "编程、聊天看世界""
 keywords: fishpro
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -15,12 +15,12 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
+author: fishpro
 organization: 
 organization_url: 
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+github_username: fishpro
+location: Nanjing, China
+email: fishpro@vip.qq.com
 
 # ---------------- #
 #    Navigation    #
@@ -102,7 +102,7 @@ gitment:
         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: mzlogin
+    owner: fishpro
     repo: blog-comments
     clientID: d2e1cbbd298958076462
     clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709

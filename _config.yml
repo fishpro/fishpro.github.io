@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: fishpro
 subtitle: "跟我一起学编程"
 description: "编码、聊天看世界"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+keywords: 跟我一起学编程, fishpro, java, csharp
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -19,7 +19,7 @@ author: fishpro
 organization: 
 organization_url: 
 github_username: fishpro
-location: Wuhan, China
+location: Nanjing, China
 email: fishpro@vip.qq.com
 
 # ---------------- #

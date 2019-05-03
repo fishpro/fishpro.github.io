@@ -1,6 +1,6 @@
-# 码志
+# 跟我一起学编程
 
-我的个人博客：<https://mazhuang.org>，欢迎 Star 和 Fork。
+我的个人博客：<http://www.fishpro.com.cn>，欢迎 Star 和 Fork。这是从mzlogin模板fork过来的站点。
 
 ## 概览
 
@@ -16,7 +16,7 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://mazhuang.org)**
+**[在线预览 &rarr;](http://www.fishpro.com.cn)**
 
 ![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
 

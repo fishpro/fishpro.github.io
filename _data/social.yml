@@ -1,9 +1,9 @@
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
+  name: fishpro
+  url: https://github.com/fishpro
 
 - sitename: 掘金
-  name: mzlogin
+  name: fishpro
   url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
 
 - sitename: LinkedIn
@@ -11,17 +11,17 @@
   url: https://www.linkedin.com/in/mazhuang
 
 - sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
+  name: fishpro
+  url: http://www.fishpro.com.cn
 
 - sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
+  name: fishpro
+  url: http://weibo.com/fishpro
 
 - sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
+  name: fishpro
+  url: http://www.zhihu.com/people/fishpro
 
 - sitename: 豆瓣
-  name: 壮哥不胖
-  url: http://www.douban.com/people/freedim
+  name: fishpro
+  url: http://www.douban.com/people/fishpro

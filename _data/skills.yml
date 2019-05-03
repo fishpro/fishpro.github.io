@@ -1,6 +1,8 @@
 - name: Software Engineer Keywords
   keywords:
+      - C#
       - Java
+      - Object-C
       - C++
       - Python
       - Design Patterns
@@ -8,6 +10,8 @@
 - name: Mobile Developer Keywords
   keywords:
       - Android
+      - Ios
+      - HTML5
       - Reverse Engineering
 
 - name: Windows Developer Keywords

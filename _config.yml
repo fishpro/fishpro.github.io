@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://www.fishpro.com.cn
+url: http://www.fishpro.com.cn
 date_format: "ordinal"
 title: fishpro
 subtitle: "编程、聊天看世界"

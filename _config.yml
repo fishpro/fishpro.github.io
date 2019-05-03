@@ -5,9 +5,9 @@ baseurl:
 url: http://www.fishpro.com.cn
 date_format: "ordinal"
 title: fishpro
-subtitle: "编程、聊天看世界"
-description: "编程、聊天看世界""
-keywords: fishpro
+subtitle: "跟我一起学编程"
+description: "编码、聊天看世界"
+keywords: 码志, Zhuang Ma, mzlogin, mazhuang
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -19,7 +19,7 @@ author: fishpro
 organization: 
 organization_url: 
 github_username: fishpro
-location: Nanjing, China
+location: Wuhan, China
 email: fishpro@vip.qq.com
 
 # ---------------- #

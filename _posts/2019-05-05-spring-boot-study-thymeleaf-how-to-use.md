@@ -1,12 +1,17 @@
 ---
 layout: post
 title: Spring Boot 2.x教程-如何使用Thymeleaf
-categories: Spring Boot
+categories: SpringBoot
 description: Spring Boot 2.x教程-如何使用Thymeleaf
-keywords: Spring Boot, Spring, Thymeleaf
+keywords: SpringBoot, Spring, Thymeleaf
 ---
 
-Thymeleaf知识分三步讲解，如何在Spring Boot中快速使用、Thymeleaf原理是什么、Thymeleaf全攻略示例讲解，本章是第一章节讲解如何在SpringBoot中使用Themealf.
+Thymeleaf知识分三步讲解：
+1. 如何使用 Thymeleaf
+2. Thymeleaf 原理是什么
+3. Thymeleaf 全攻略示例讲解
+
+本章是第一章节讲解如何在 Spring Boot 中使用 Themealf.
 
 [源码下载](https://github.com/fishpro/spring-boot-study/tree/master/spring-boot-study-thymeleaf)
 
@@ -16,7 +21,7 @@ Thymeleaf知识分三步讲解，如何在Spring Boot中快速使用、Thymeleaf
 {:toc}
 
 # 1 引入依赖
-打开根目录下的文件 pom.xml dependencies节点加入以下代码
+打开根目录下的文件 pom.xml dependencies 节点加入以下代码
 ``` xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -25,7 +30,7 @@ Thymeleaf知识分三步讲解，如何在Spring Boot中快速使用、Thymeleaf
 ```
 
 # 2 配置Thymeleaf
-找到src\main\resources\application.yml，如果是application.properties更名后缀yml即可,当然习惯使用properties后缀的则不需要更改。
+找到src\main\resources\application.yml，如果是application.properties更名后缀yml即可,当然习惯使用 properties 后缀的则不需要更改。
 注意这里的配置不是必须的，不配做，thymeleaf则有默认的配置。
 ```yml
 #thymelea模板配置
@@ -40,11 +45,11 @@ spring:
     #thymeleaf 编码格式
     encoding: UTF-8
 ```
-application.properties后缀格式 表示为 ``` spring.thymeleaf.prefix=classpath:/templates/``` 其他类似修改。
+application.properties 后缀格式 表示为 ``` spring.thymeleaf.prefix=classpath:/templates/``` 其他类似修改。
 
 # 3 编写代码实例
 ## 3.1 项目结构
-在编写代码之前应该搞清楚thymeleaf结构。
+在编写代码之前应该搞清楚 thymeleaf 结构。
 src\main\resources\templates 为目录的thymeleaf模板存放路径
 
 ## 3.2 数据准备
@@ -65,6 +70,7 @@ src\main\resources\templates 为目录的thymeleaf模板存放路径
 ```
 
 2. 新建模板文件src\main\resources\templatesdemo\simple.html
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +101,7 @@ src\main\resources\templates 为目录的thymeleaf模板存放路径
 
 ---
 
-欢迎关注我的微信公众号，接收 markdown-intro 最新动态。
-
+欢迎关注我的微信公众号,我们一起编程聊天看世界
+ 
 <div align="center"><img width="192px" height="192px" src="http://www.fishpro.com.cn/assets/images/qrcode.jpg"/></div>
 

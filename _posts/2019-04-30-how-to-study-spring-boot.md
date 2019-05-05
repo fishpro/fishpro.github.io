@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 如何学习好一个新的SpringBoot知识点
-categories: development
+categories: SpringBoot
 description: 如何学习好一个新的SpringBoot知识点
-keywords: development
+keywords: SpringBoot
 ---
 
 *“ 今天信息快速迭代，新技术层出不穷，作为码农大军一员，保持时刻学习的态势是一个热衷于编程的人的常态，那么如何学习好一个技术知识点呢。本章以SpringBoot点总结”*

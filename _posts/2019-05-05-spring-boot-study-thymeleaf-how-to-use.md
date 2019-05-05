@@ -90,3 +90,12 @@ src\main\resources\templates 为目录的thymeleaf模板存放路径
 
 # 4 运行实例
 在浏览器中输入 http://localhost:8080/demo/simple
+
+
+
+---
+
+欢迎关注我的微信公众号，接收 markdown-intro 最新动态。
+
+<div align="center"><img width="192px" height="192px" src="http://www.fishpro.com.cn/assets/images/qrcode.jpg"/></div>
+

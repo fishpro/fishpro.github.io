@@ -5,9 +5,9 @@ baseurl:
 url: http://www.fishpro.com.cn
 date_format: "ordinal"
 title: fishpro
-subtitle: "跟我一起学编程"
+subtitle: "编码、聊天看世界"
 description: "编码、聊天看世界"
-keywords: 跟我一起学编程, fishpro, java, csharp
+keywords: 编码、聊天看世界, fishpro, java, csharp
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5

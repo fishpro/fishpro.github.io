@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 技术人在互联网如何变现—
+title: 技术人在互联网如何变现
 categories: earnmoney
-description: 技术人在互联网如何变现—
+description: 技术人在互联网如何变现
 keywords: earnmoney
 ---
  

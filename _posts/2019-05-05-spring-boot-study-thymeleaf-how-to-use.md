@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Spring Boot 2.x教程-如何使用Thymeleaf
+title: Spring Boot 2.x教程-如何使用 Thymeleaf
 categories: SpringBoot
-description: Spring Boot 2.x教程-如何使用Thymeleaf
+description: Spring Boot 2.x教程-如何使用 Thymeleaf
 keywords: SpringBoot, Spring, Thymeleaf
 ---
 
-Thymeleaf知识分三步讲解：
+**Thymeleaf知识分三步讲解：**
 1. 如何使用 Thymeleaf
 2. Thymeleaf 原理是什么
 3. Thymeleaf 全攻略示例讲解
@@ -50,11 +50,12 @@ application.properties 后缀格式 表示为 ``` spring.thymeleaf.prefix=classp
 # 3 编写代码实例
 ## 3.1 项目结构
 在编写代码之前应该搞清楚 thymeleaf 结构。
-src\main\resources\templates 为目录的thymeleaf模板存放路径
+src\main\resources\templates 为目录的 thymeleaf 模板存放路径
 
 ## 3.2 数据准备
-1. 新建Java文件 src\main\...\controller\DemoController.java 
-在DemoController增加viewmodel数据的输出
+1. 新建Java文件 src\main\...\controller\DemoController.java  
+在 DemoController 增加展示层数据的输出
+
 ```java
  @RequestMapping("/simple")
     public String simpleDemo(Model model){

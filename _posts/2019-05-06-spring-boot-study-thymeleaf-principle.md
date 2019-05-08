@@ -58,14 +58,14 @@ Thymeleaf 支持HTML、JAVASCRIPT、CSS 这就意味着他完全兼容HTML代码
 
 ## 2.2 Thymeleaf 工作流程
 我们需要提出几个问题
-1. 当在控制层输出对象，这些对象是怎么被引擎识别
+1. **当在控制层输出对象，这些对象是怎么被引擎识别**
 
 &emsp;&emsp;在 Controller 层我们输出了对象 user 和 users 两个对象。这两个对象则被模板引擎托管。
-1. 引擎加载模版文件的时候，如何识别需要替换的值
+2. **引擎加载模版文件的时候，如何识别需要替换的值**
 
 &emsp;&emsp;模板引擎根据 Controller 中的模板路径 /demo/simple 找到相应的模板文件，模板文件中使用正则表达式查找模板标签语言，Thymeleaf 模板引擎采用 th: 开头。例如 th:value, th:text 。
 
-2. 最后引擎是如何吧控制层对象转化成 html 等前段语言输出的
+3. **最后引擎是如何吧控制层对象转化成 html 等前段语言输出的**
 
 &emsp;&emsp;模板引擎找到了模板文件中的模板表达式，模板引擎根据模板表达式中的内容来实现一种算法，算法把 Controller 输出的对象匹配到模板表达式中。
 
@@ -74,6 +74,6 @@ Thymeleaf 支持HTML、JAVASCRIPT、CSS 这就意味着他完全兼容HTML代码
 ---
 引用
 
-[浅谈模板引擎](https://www.cnblogs.com/dojo-lzz/p/5518474.html)
+1. [浅谈模板引擎](https://www.cnblogs.com/dojo-lzz/p/5518474.html)
 
 

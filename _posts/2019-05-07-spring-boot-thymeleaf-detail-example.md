@@ -82,6 +82,17 @@ keywords: SpringBoot, Spring, Thymeleaf
 <p th:text="${user.username}">username</p>
 ```
 ## 2.3 消息表达式 #{...}
+注意消息表达式在spring boot中只有在国际化设置中能够生效，在示例中。
+
+1. 新建 resources下文件夹 i18n
+2. 新建资源文件 messages.properties，同时建立zh_CN、en_US国际化文件，表示为messages_zh_CN.properties,messages_en_US.properties
+3. 在他们中建立相应的变量 home.welcome=i am fishpro等内容
+4. 在html中使用
+```html
+<p th:text="#{home.welcome}">welcome!</p>
+```
+
+
 
 ## 2.4 链接网址表达式 @{...}
 通常在link中使用或script中使用

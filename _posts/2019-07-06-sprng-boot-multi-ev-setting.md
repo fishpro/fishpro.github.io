@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 多环境如何配置
 categories: springboot
 description:  Spring Boot 开发环境、测试环境、预生产环境、生产环境多环境配置
-keywords: springboot,maven
+keywords: springboot,active
 ---
 
 

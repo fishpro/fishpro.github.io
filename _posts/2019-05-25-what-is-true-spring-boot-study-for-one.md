@@ -5,7 +5,7 @@ categories: springboot
 description: 如何正确的入门 Sprint Boot
 keywords: springboot
 ---
-&emsp;&emsp;突然想知道，既然要写个教程，那么什么样的教程是符合初学者，就是啥也不懂，或者就是那种害怕学习后端的好同学。
+&emsp;&emsp;想要入门 Sprint Boot，那么什么样的教程是符合初学者学习的（没有太多的Java基础但有一些程序基础或者软件编程知识）。
 
 &emsp;&emsp;这恰好能够勾出很多问题，比如是文章图文教程适合还是视频教程适合零基础初学者。网上到处飞的教程究竟是真的教程还是就是笔者的学习笔记。
 

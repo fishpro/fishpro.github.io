@@ -17,7 +17,7 @@ keywords: springboot,idea
 {:toc}
 
 
-[本项目源码下载]()
+[本项目源码下载](https://github.com/fishpro/spring-boot-study) 注意本示例源码只包括仓库中的 `spring-boot-study-helloworld-service` , `spring-boot-study-helloworld` ,`spring-boot-study-log`三个项目，其他项目为其他示例中项目。
 
 本章演示的多模块之间的关系如下图：spring-boot-study-helloworld 依赖人 spring-boot-study-helloworld-service 调用其方法 message 输出字符串。
 ![项目关系图](https://www.cnblogs.com/images/cnblogs_com/fishpro/1453719/o_modules_libs.png)

@@ -7,14 +7,17 @@ keywords: springboot,log
 ---
 
 
+
+我们编写任何 Spring Boot 程序，可能绕不开的就是 log 日志框架（组件）。
+在大多数程序员眼中日志是用来定位问题的。这很重要。
+
 **目录**
 
 * TOC
 {:toc}
 
 
-我们编写任何 Spring Boot 程序，可能绕不开的就是 log 日志框架（组件）。
-在大多数程序员眼中日志是用来定位问题的。这很重要。
+[本项目源码下载](https://github.com/fishpro/spring-boot-study/tree/master/spring-boot-study-log)  注意本项目提供的源码已在后期重新编写，有部分日期描述不一致。
 
 如果你只是想知道 Spring boot log 如何使用，请直接观看  **3.2 使用 Spring Boot Logback**
 
@@ -27,6 +30,8 @@ keywords: springboot,log
 3. ***记录分析用户行为*** 统计分析师用来记录用户的一起行为，用于分析用户的习惯和商业价值
 4. ***备份和还原实时数据*** 数据库工程师用来作为一种特殊的数据库
 
+![日志组件能干什么](https://www.cnblogs.com/images/cnblogs_com/fishpro/1453719/o_log1.png)
+
 ## 1.2 日志的级别 Log Level
 日志级别是对日志记录信息的轻重缓急的划分。通常从轻到重划分为：
 1. TRACE
@@ -34,6 +39,8 @@ keywords: springboot,log
 3. INFO
 4. WARN
 5. ERROR
+
+![日志的级别](https://www.cnblogs.com/images/cnblogs_com/fishpro/1453719/o_log3.png)
 
 通常当我们指定日志级别为 `INFO` 级别，那么 `TRACE` `DEBUG` 级别的日志就不会被输出打印，同理如果指定日志级别为 `ERROR`，那么其他类型的日志将不会被打印。
 
@@ -81,7 +88,7 @@ slf4j的全称是Simple Loging Facade For Java，即它仅仅是一个为Java程
 
 2）填写GroupId（包名）、Artifact（项目名） 即可。点击 下一步
 - groupId=com.fishpro 
-- artifactId=springstudy
+- artifactId=log
   
 3)选择依赖 Spring Web Starter 前面打钩
 
@@ -90,26 +97,31 @@ slf4j的全称是Simple Loging Facade For Java，即它仅仅是一个为Java程
 5)**编写个简单的示例，可以看出使用日志组件非常的简单**
 
 ```java
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 @SpringBootApplication
-public class SpringstudyApplication {
+public class LogApplication {
 
     public static void main(String[] args) {
-        Logger logger=LoggerFactory.getLogger(SpringstudyApplication.class);
-        SpringApplication.run(SpringstudyApplication.class, args);
-        logger.info("hello world!");
-        logger.debug("This is a debug message");
+        Logger logger =LoggerFactory.getLogger(LogApplication.class);
+        SpringApplication.run(LogApplication.class, args);
+        logger.debug("This is a debug message");//注意 spring 默认日志输出级别为 info 所以默认情况下 这句不会打印到控制台
         logger.info("This is an info message");
         logger.warn("This is a warn message");
         logger.error("This is an error message");
     }
+
 }
 ```
 **运行可以看到输出了 hello world** 
 ```bash
-2019-07-08 11:30:23.593  INFO 36775 --- [           main] c.f.springstudy.SpringstudyApplication   : hello world!
-2019-07-08 11:30:23.593  INFO 36775 --- [           main] c.f.springstudy.SpringstudyApplication   : This is an info message
-2019-07-08 11:30:23.593  WARN 36775 --- [           main] c.f.springstudy.SpringstudyApplication   : This is a warn message
-2019-07-08 11:30:23.593 ERROR 36775 --- [           main] c.f.springstudy.SpringstudyApplication   : This is an error messageworld!
+2019-07-10 23:51:49.225  INFO 3906 --- [           main] com.fishpro.log.LogApplication           : Started LogApplication in 1.688 seconds (JVM running for 2.317)
+2019-07-10 23:51:49.226  INFO 3906 --- [           main] com.fishpro.log.LogApplication           : This is an info message
+2019-07-10 23:51:49.227  WARN 3906 --- [           main] com.fishpro.log.LogApplication           : This is a warn message
+2019-07-10 23:51:49.227 ERROR 3906 --- [           main] com.fishpro.log.LogApplication           : This is an error message
 ```
 
 
@@ -134,7 +146,7 @@ public class IndexController {
     }
 }
 ```
-在浏览器中执行 http://locahost:8080/
+在浏览器中执行 http://locahost:8081/
 ![输出日志](https://www.cnblogs.com/images/cnblogs_com/fishpro/1453719/o_logindex1.png)
 
 如上图，我们没有 `DEBUG` 的日志，也就是说 `logger.debug("This is a debug message");` 没有被输出到控制台。
@@ -165,17 +177,17 @@ Base logback configuration provided for compatibility with Spring Boot 1.1
 ```bash
 logging:
   level:
-    com.fishpro.springstudy: debug
+    com.fishpro.log: debug
 ```
-在浏览器中执行 http://locahost:8080/ 输出如下日志 可以看出已经有了 `DEBUG` 日志
+在浏览器中执行 http://locahost:8081/ 输出如下日志 可以看出已经有了 `DEBUG` 日志
 ```bash
-2019-07-08 12:51:30.423  INFO 36966 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-07-08 12:51:30.423  INFO 36966 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-07-08 12:51:30.428  INFO 36966 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2019-07-08 12:51:30.447 DEBUG 36966 --- [nio-8080-exec-1] c.f.s.controller.IndexController         : This is a debug message
-2019-07-08 12:51:30.447  INFO 36966 --- [nio-8080-exec-1] c.f.s.controller.IndexController         : This is an info message
-2019-07-08 12:51:30.448  WARN 36966 --- [nio-8080-exec-1] c.f.s.controller.IndexController         : This is a warn message
-2019-07-08 12:51:30.448 ERROR 36966 --- [nio-8080-exec-1] c.f.s.controller.IndexController         : This is an error message
+2019-07-08 12:51:30.423  INFO 36966 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-08 12:51:30.423  INFO 36966 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-08 12:51:30.428  INFO 36966 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-08 12:51:30.447 DEBUG 36966 --- [nio-8081-exec-1] c.f.s.controller.IndexController         : This is a debug message
+2019-07-08 12:51:30.447  INFO 36966 --- [nio-8081-exec-1] c.f.s.controller.IndexController         : This is an info message
+2019-07-08 12:51:30.448  WARN 36966 --- [nio-8081-exec-1] c.f.s.controller.IndexController         : This is a warn message
+2019-07-08 12:51:30.448 ERROR 36966 --- [nio-8081-exec-1] c.f.s.controller.IndexController         : This is an error message
 ```
 
 ### 3.4.3 在 application.yml 详细配置
@@ -184,7 +196,7 @@ logging:
 logging:
   #level 日志等级 指定命名空间的日志输出
   level:
-    com.fishpro.springstudy: debug
+    com.fishpro.log: debug
   #file 指定输出文件的存储路径
   file: logs/app.log
   #pattern 指定输出场景的日志输出格式
@@ -192,16 +204,13 @@ logging:
     console: "%d %-5level %logger : %msg%n"
     file: "%d %-5level [%thread] %logger : %msg%n"
 ```
-在浏览器中执行 http://locahost:8080/
+在浏览器中执行 http://locahost:8081/
 
 ```bash
-2019-07-08 12:58:25,021 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-07-08 12:58:25,021 INFO  org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
-2019-07-08 12:58:25,027 INFO  org.springframework.web.servlet.DispatcherServlet : Completed initialization in 6 ms
-2019-07-08 12:58:25,046 DEBUG com.fishpro.springstudy.controller.IndexController : This is a debug message
-2019-07-08 12:58:25,046 INFO  com.fishpro.springstudy.controller.IndexController : This is an info message
-2019-07-08 12:58:25,046 WARN  com.fishpro.springstudy.controller.IndexController : This is a warn message
-2019-07-08 12:58:25,046 ERROR com.fishpro.springstudy.controller.IndexController : This is an error message
+00:08:15 [reactor-http-nio-2] DEBUG com.fishpro.log.LogApplication - This is a debug message
+00:08:15 [reactor-http-nio-2] INFO  com.fishpro.log.LogApplication - This is an info message
+00:08:15 [reactor-http-nio-2] WARN  com.fishpro.log.LogApplication - This is a warn message
+00:08:15 [reactor-http-nio-2] ERROR com.fishpro.log.LogApplication - This is an error message
 ```
 
 同时我们可以看到在项目根路径下多处理 `logs` 文件夹，下面有 `app.log` 文件，`app.log` 文件同时记录了日志的输出。
@@ -210,7 +219,7 @@ logging:
 ### 3.4.4 不同环境中配置
 我们可以在 `dev`、`prod`、`test` 等环境中配置不同的 log 配置项目，我们只需要根据我们的配置文件来设置即可。
 
-关于如何在 Spring Boot 中配置不同的环境实现 开发环境（dev）、测试环境（test）、生成环境（prod）分离，请参考[Spring Boot 中多环境配置]()
+关于如何在 Spring Boot 中配置不同的环境实现 开发环境（dev）、测试环境（test）、生成环境（prod）分离，请参考[Spring Boot 中多环境配置](https://www.cnblogs.com/fishpro/p/11154872.html)
 
 
 
@@ -226,8 +235,8 @@ logging:
 
 ### 3.5.2 使用 logback-spring.xml 自定义配置
 这里我们使用自定义配置 实现
-1.把日志输出到指定的目录，并按照日期 yyyy-MM-dd 的格式按天存储
-2.
+1. 把日志输出到指定的目录，并按照日期 yyyy-MM-dd 的格式按天存储，注意如果没有特别指定，这里的目录 applog 就是指项目的根目录（如果您的项目是多模块配置并不是指模块的目录）
+2. 配置 xml
  ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
@@ -260,7 +269,7 @@ logging:
         </layout>
     </appender>
 
-    <logger name="com.fishpro.springstudy" additivity="false">
+    <logger name="com.fishpro.log" additivity="false">
         <appender-ref ref="console"/>
         <appender-ref ref="logFile"/>
     </logger>
@@ -289,7 +298,7 @@ logging:
 
  ```
 
-在浏览器中执行 http://locahost:8080/
+在浏览器中执行 http://locahost:8081/
 
 此时，你会发现工程根目录多出来 applog 文件夹，`applog/2019-07-08/2019-07-08.log` 按照日期分类来记录文件，这很重要。
 #### 优先级
@@ -303,3 +312,4 @@ logging:
 
 
 总结：本章介绍了日志组件 Spring Boot Logback 的简单使用，下一个章节，我们将详细说明 logback-spring.xml 的标签含义及标签的属性含义。
+

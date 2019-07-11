@@ -52,5 +52,10 @@ IDEA 需要配置 git 和 github 两个配置。
 
 # 3 修改代码并提交
 1. 右键需要提交的文件夹或者包名或者文件名
-2. 选择 git > commit File 先向本地 git 仓库提交 **注意必须先提交到本地 git 仓库，才能提交到远程 github 仓库**
-3. 选择 git > respository > push 向远程 github 仓库提交本地仓库内容
+2. 选择 git > add 如果您的项目文件（灰色状态）还没有加入到 git 配置库，默认都是 IDEA 自动加入的
+3. 选择 git > commit File 先向本地 git 仓库提交 **注意必须先提交到本地 git 仓库，才能提交到远程 github 仓库**
+4. 选择 git > respository > push 向远程 github 仓库提交本地仓库内容
+
+**总结**
+- github 依赖于 git，必须先安装 git 环境
+- 提交到 github 仓库顺序是，从 项目文件 -> add 到 项目 git 仓库文件中 ->提交到本地git仓库 -> 从 git 仓库提交大 github 仓库

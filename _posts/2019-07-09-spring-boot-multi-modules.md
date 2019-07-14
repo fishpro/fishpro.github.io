@@ -198,3 +198,10 @@ IDEA 中也可以通过图形化管理模块
 2. 一个项目中可以增加多个模块
 3. 模块可以说类库 Library，也可以是应用 Application 
 4. 模块之间可以相互依赖，一般是单向依赖
+
+---
+关联阅读
+
+- [Spring Boot 入门前的准备-安装 Java JDK]()
+- [Spring Boot 入门前的准备-IntelliJ IDEA 开发工具的安装与使用]()
+- [Spring Boot 学习 IDEA 下的 github 创建提交与修改]()

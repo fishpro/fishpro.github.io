@@ -18,7 +18,7 @@ keywords: SpringBoot, Spring, Exception
 
 首先让我们简单了解或重新学习下 Java 的异常机制。
 
-[本项目源码下载](https://github.com/fishpro/spring-boot-throwable)
+[本项目源码下载](https://github.com/fishpro/spring-boot-study/tree/master/spring-boot-study-throwable)
 
 # 1 Java 异常机制概述
 Spring Boot 的所有异常处理都基于 java 的。
@@ -193,7 +193,7 @@ artifactId=thymeleaf
 - exception 下的 `MyRestExceptionHandler.java` 
 
  
-[本项目源码下载](https://github.com/fishpro/spring-boot-throwable)
+[本项目源码下载](https://github.com/fishpro/spring-boot-study/tree/master/spring-boot-study-throwable)
 
 具体代码清单如下：
 

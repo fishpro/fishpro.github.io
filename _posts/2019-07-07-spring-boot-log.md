@@ -313,3 +313,9 @@ logging:
 
 总结：本章介绍了日志组件 Spring Boot Logback 的简单使用，下一个章节，我们将详细说明 logback-spring.xml 的标签含义及标签的属性含义。
 
+---
+扩展篇
+- [Spring Boot Aop 如何使用]()
+- [Spring Boot 多日志组件如何统一框架]()
+- [Spring Boot 项目中使用 Aop 进行日志的全局处理]()
+

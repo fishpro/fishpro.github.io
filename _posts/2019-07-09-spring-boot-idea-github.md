@@ -1,8 +1,8 @@
 ---
 layout: post
-title: IDEA 下的 github 创建提交与修改
+title: Spring Boot 学习 IDEA 下的 github 创建提交与修改
 categories: springboot
-description:  IDEA 下的 github 创建提交与修改
+description:  Spring Boot 学习 IDEA 下的 github 创建提交与修改
 keywords: springboot,idea,github
 ---
 

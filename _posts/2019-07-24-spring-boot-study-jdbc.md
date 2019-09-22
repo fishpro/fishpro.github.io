@@ -29,6 +29,7 @@ mysql 5.6+ 数据库
 |password|varchar(255)|否|密码|
 |last_login_time|date|否|最近登录时间|
 |sex|tinyint|否|性别 0男 1女 2其他|
+
 ```sql
 
 SET NAMES utf8mb4;

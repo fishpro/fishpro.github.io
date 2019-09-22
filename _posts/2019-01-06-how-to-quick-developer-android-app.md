@@ -98,5 +98,14 @@ keywords: development
 希望你喜欢上面的分析，有什么问题可以直接留言交流谢谢。
 
 所谓学以致用，我曾经学过的，那些没用过的技术基本忘光。
+ 
+----
+# 6.问题
 
-完！
+**spring boot application yml文件中的009变成了9.0**
+
+在application.yml中加双引号
+
+```yml
+fishpro: "009"
+```

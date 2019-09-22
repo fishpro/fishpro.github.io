@@ -9,6 +9,8 @@ keywords:dom4j,xstream,WebService,SpringBoot
 Xml 现在仍然占据着比较重要的地位，比如微信接口中使用了 Xml 进行消息的定义。本章重点讨论 Xml 的新建、编辑、查找、转化，可以这么理解，本章是使用了 dom4j、xstream 也是在开发者中使用最为广泛的 。 本章主要是位大家提供一个操作 Xml 的类库。
 
 [本项目源码 github 下载 ](https://github.com/fishpro/spring-boot-study/tree/master/spring-boot-study-xmldom4j)
+
+
 # 0 Dom4j XStream 简单介绍
 
 一句话 Dom4j 专注于 Xml 操作的高性能库，Xstream 则专注于 对象之间的转换。

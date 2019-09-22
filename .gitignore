@@ -5,3 +5,5 @@ _site/
 *~
 .DS_Store
 Gemfile.lock
+
+_posts/2019-07-22-spring-boot-study-velocity.md

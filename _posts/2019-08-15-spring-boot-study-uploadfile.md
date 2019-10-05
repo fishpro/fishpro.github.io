@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 文件上传简易教程
 categories: SpringBoot
 description: Spring Boot 文件上传简易教程
-keywords:upload,Fastjson,SpringBoot
+keywords: upload,Fastjson,SpringBoot
 ---
 上传文件是我们日常使用最为广泛的功能之一，比如App端上传头像。本章演示如何从客户端上传到 Spring Boot 开发的 Api中。
 

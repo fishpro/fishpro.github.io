@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 使用 CXF 调用 WebService 服务
 categories: SpringBoot
 description: Spring Boot 使用 CXF 调用 WebService 服务
-keywords:CXF,WebService,SpringBoot
+keywords: CXF,WebService,SpringBoot
 ---
 
 上一张我们讲到 [Spring Boot 开发 WebService 服务](https://www.cnblogs.com/fishpro/p/spring-boot-study-webservice.html)，本章研究基于 CXF 调用 WebService。另外本来想写一篇 xfire 作为 client 端来调用 webservice 的代码。后来发现 xfire 在2007 你那巅峰时刻，已经不再更新，而后来的 Spring 已经抛弃了部分 Api。导致现在已经不兼容了。

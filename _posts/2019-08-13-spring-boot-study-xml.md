@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 使用 Dom4j XStream 操作 Xml
 categories: SpringBoot
 description: Spring Boot 使用 Dom4j XStream 操作 Xml
-keywords:dom4j,xstream,WebService,SpringBoot
+keywords: dom4j,xstream,WebService,SpringBoot
 ---
 
 Xml 现在仍然占据着比较重要的地位，比如微信接口中使用了 Xml 进行消息的定义。本章重点讨论 Xml 的新建、编辑、查找、转化，可以这么理解，本章是使用了 dom4j、xstream 也是在开发者中使用最为广泛的 。 本章主要是位大家提供一个操作 Xml 的类库。

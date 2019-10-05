@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 自定义 Banner 教程
 categories: SpringBoot
 description: Spring Boot 自定义 Banner 教程
-keywords:Banner,SpringBoot
+keywords: Banner,SpringBoot
 ---
 
 我们在启动 SpringBoot 时，控制台会打印 SpringBoot Logo 以及版本信息。有的时候我们需要自己弄个有个性的文本图片。Spring Boot 为我们提供了自定义接口。

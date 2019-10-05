@@ -1,4 +1,5 @@
 Jekyll on macOS
+
 # Install Command Line Tools
 
 如果你还没有安装 Command Line Tools 你可以先安装
@@ -56,10 +57,12 @@ ruby 2.6.3p62 (2019-04-16 revision 67580)
 
 
 # Install Jekyll
-执行Jekyll安装语句
+
+本地安装，执行Jekyll安装语句
 ```
 gem install --user-install bundler jekyll
 ```
-
+实际上本地安装我是有问题的所以
 ``
+
 ``

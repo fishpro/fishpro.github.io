@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 使用 JAX-WS 调用 WebService 服务
 categories: SpringBoot
 description: Spring Boot 使用 JAX-WS 调用 WebService 服务
-keywords:JAX-WS,WebService,SpringBoot
+keywords: JAX-WS,WebService,SpringBoot
 ---
 
 除了 CXF 我们还可以使用 Spring Boot 自身默认的组件 JAX-WS 来实现 WebService 的调用。

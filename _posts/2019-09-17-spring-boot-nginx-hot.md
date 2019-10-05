@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 利用 nginx 实现生产环境的热更新
 categories: SpringBoot
 description: Spring Boot 利用 nginx 实现生产环境的热更新
-keywords:Nginx,SpringBoot
+keywords: Nginx,SpringBoot
 ---
 
 当我们在服务器部署Java程序，特别是使用了 `Spring Boot` 生成单一 Jar 文件部署的时候，单一文件为我们开发单来的极大的便利性，保障程序的完整性。但同时对我们修改程序中的任何一处都带来重启服务的麻烦。如何解决这个问题呢？

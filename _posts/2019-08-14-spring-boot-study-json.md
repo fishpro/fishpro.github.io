@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot Json 之 Jackjson Fastjson
 categories: SpringBoot
 description: Spring Boot Json 之 Jackjson Fastjson
-keywords:Jackjson,Fastjson,SpringBoot
+keywords: Jackjson,Fastjson,SpringBoot
 ---
 
 Json 是目前互联网应用使用最为广泛的信息交换格式之一。Spring Boot 内置了 Jackson 。Json 在应用中主要体现在以下功能：

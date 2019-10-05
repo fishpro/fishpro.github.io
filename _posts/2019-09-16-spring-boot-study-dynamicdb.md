@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 如何动态切换数据源
 categories: SpringBoot
 description: Spring Boot 如何动态切换数据源
-keywords:SpringBoot
+keywords: SpringBoot
 ---
 
 本章是一个完整的 Spring Boot 动态数据源切换示例，例如主数据库使用 lionsea 从数据库 lionsea_slave1、lionsea_slave2。只需要在对应的代码上使用 DataSource("slave1") 注解来实现数据库切换。

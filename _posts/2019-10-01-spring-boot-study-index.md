@@ -3,7 +3,7 @@ layout: post
 title: Spring Boot 入门教程系列文章
 categories: SpringBoot
 description: Spring Boot 入门教程系列文章
-keywords:SpringBoot
+keywords: SpringBoot
 ---
 
 # 为什么要写 Spring Boot 系列文章

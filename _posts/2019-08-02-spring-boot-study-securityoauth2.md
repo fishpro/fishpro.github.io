@@ -1,3 +1,11 @@
+---
+layout: post
+title: Spring Boot OAuth2 应用
+categories: SpringBoot
+description: Spring Boot OAuth2 应用
+keywords: oauth2,SpringBoot
+---
+
 # 1 OAuth2 概述
 # 1.1 什么是 OAuth2
 
